@@ -1,0 +1,96 @@
+.sneaky-nav {
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: auto;
+    background: #830a0a;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    z-index: 999;
+    padding: 15px 0;
+    border: 1px solid #eee;
+}
+
+.sneaky-nav:hover {
+    width: 190px;
+    border-radius: 15px;
+}
+
+.sneaky-nav.scrolled {
+    background: #2c3e50;
+    color: #fff;
+    left: 10px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    justify-content: flex-start;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+    width: 100%;
+}
+
+.nav-item:hover {
+    color: #ffd700;
+}
+
+.nav-item:hover .nav-icon {
+    animation: Spin 0.8s ease-in-out;
+}
+
+.sneaky-nav.scrolled .nav-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-icon {
+    font-size: 1.2rem;
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-label {
+    margin-left: 0;
+    font-weight: 500;
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.sneaky-nav:hover .nav-label {
+    opacity: 1;
+}
+
+.divider {
+    height: 1px;
+    background: #eee;
+    margin: 5px auto;
+    width: 80%;
+}
+
+.sneaky-nav.scrolled .divider {
+    background: #444;
+}
+
+@keyframes Spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
