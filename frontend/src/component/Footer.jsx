@@ -21,10 +21,10 @@ function Footer() {
                 <div className='footer-links'>
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/gallery">Pet Gallery</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/about">About Us</a></li>
+                        <li><a href='/'>Home</a></li>
+                        <li><a href='/gallery'>Pet Gallery</a></li>
+                        <li><a href='/blog'>Blog</a></li>
+                        <li><a href='/about'>About Us</a></li>
                     </ul>
                 </div>
 
@@ -42,7 +42,7 @@ function Footer() {
                     <h4>Stay Updated</h4>
                     <p>Get notified whenever a new furry friend is looking for a forever home.</p>
                     <div className='subscribe-form'>
-                        <input type="email" placeholder="Your Email..." />
+                        <input type='email' placeholder='Your Email...' />
                         <button className='btn-subscribe'>Subscribe</button>
                     </div>
                 </div>
